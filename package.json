@@ -21,7 +21,7 @@
     "url": "https://github.com/luocong2016/vite-vue/issues"
   },
   "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": "eslint --fix"
+    "*.{js,jsx,vue,ts,tsx}": ["yarn lint", "yarn prettier"]
   },
   "dependencies": {
     "axios": "^0.26.1",
