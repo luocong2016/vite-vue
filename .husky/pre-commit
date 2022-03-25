@@ -4,3 +4,5 @@
 # yarn lint
 
 # yarn prettier
+
+npx lint-staged
