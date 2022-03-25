@@ -8,10 +8,11 @@
 6. `test`增加测试
 7. `chore`构建过程或辅助工具的变动
 
+## 提交格式
 ```
-[type-enum](scope): desc
+[type-enum]<(scope)>: desc
 
-body
+<body>
 
-footer
+<footer>
 ```
