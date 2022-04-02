@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
-const routes: Array<RouteRecordRaw> = [
+export const whiteList: string[] = ['/login']
+
+export const constRoutes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'Home',
@@ -8,9 +10,11 @@ const routes: Array<RouteRecordRaw> = [
   }
 ]
 
+export const asyncRoutes: RouteRecordRaw[] = []
+
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes: constRoutes
 })
 
 export default router

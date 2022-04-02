@@ -13,9 +13,10 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
   const prodEnabled: boolean = env.VITE_USE_CHUNK_MOCK === 'true' ? true : false
 
   console.log(`[environment variable]
+    command: ${command}
     mode: ${mode}
     localEnabled: ${localEnabled}
-    prodEnabled: ${prodEnabled} 
+    prodEnabled: ${prodEnabled}
   `)
 
   return {
